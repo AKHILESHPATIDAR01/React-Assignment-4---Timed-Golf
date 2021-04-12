@@ -64,15 +64,16 @@ class Timer extends React.Component {
     })
   }
 
-  timmer(){
-
-    if(this.state.x!=250 && this.state.y!=250){
+  timmer() {
+    if (this.state.x !== 250 && this.state.y !== 250) {
       this.setState({
-        time: this.state.time + 1,
-      })
-    }
-    else{
-      
+        time: this.state.time + 1
+      });
+    } else {
+      this.setState({
+        x: 250,
+        y: 250
+      });
     }
   }
 
